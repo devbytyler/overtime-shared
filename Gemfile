@@ -41,3 +41,4 @@ gem "gritter", "1.2.0"
 gem 'administrate'
 gem 'bourbon', '~> 4.3', '>= 4.3.2'
 gem 'pundit', '~> 1.1'
+gem 'twilio-ruby', '~> 4.13'
