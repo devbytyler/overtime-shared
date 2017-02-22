@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
+  resources :audit_logs, except: [:new, :edit, :destroy]
   
-  resources :audit_logs
   namespace :admin do
-  resources :users
-  resources :admin_users
-  resources :posts
+    resources :users
+    resources :admin_users
+    resources :posts
 
     root to: "users#index"
   end
