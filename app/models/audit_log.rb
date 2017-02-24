@@ -16,4 +16,6 @@ class AuditLog < ApplicationRecord
     def set_defaults
       self.start_date ||= Date.today - 6.days
     end
+
+    scope :by_start_date, -> { order('start_date DESC') }
 end
